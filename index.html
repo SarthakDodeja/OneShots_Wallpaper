@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oneshots-home page</title>
+    <link rel="icon" href="icon-image.png" type="image/png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- headear elemet -->
+    <div class="header">
+        <div class="logo">
+            <img src="icon-image.png" alt="icon-oneshots" height="80px" width="80px">
+            <h1>OneShots Wallpapers</h1>
+        </div> 
+        <div class="search">
+            <div class="area" id="search-box">
+                <input id="inp-box" type="text"></input>
+            </div>
+
+            <div class="icon-container">
+                <span class="fas fa-search" onclick="handleSearch()"></span>
+            </div>
+        </div>
+
+        <div>
+            <button class="login" onclick="openPopup('loginPopup')">Log In</button>
+        </div>
+    
+    </div>
+
+    <!-- navbar element cursor -->
+    <div class="navbar">
+        <a href="beach.html">Beach</a>
+        <a href="city.html">City</a>
+        <a href="cars.html">Car</a>
+        <a href="mountain.html">Mountain</a>
+        <a href="4k.html">4K</a>
+        <a href="forest.html">Forest</a>
+        <a href="architecture.html">Architecture</a>
+        <a href="space.html">Space</a>
+    </div>
+
+    <!-- top wallpaper div -->
+    <div class="image-container" id="imageContainer"></div>
+
+    <div class="footer">
+        <div class="rating"></div>
+        <div class="copy"></div>
+    </div>
+
+    
+    <div class="popup" id="loginPopup">
+        <h2 class="head">Login</h2>
+        <input type="text" placeholder="Username" required id="name1">
+        <input type="password" placeholder="Password" required  id="name2">
+        <button class="enter" onclick="login()">Login</button></br>
+        <button onclick="openPopup('createAccountPopup')" class ="create">Create an Account</button>
+    </div>
+
+    <!-- Create Account Popup -->
+    <div class="popup" id="createAccountPopup">
+        <h3 class="head2">Create an Account</h3>
+        <input type="text" placeholder="Name"  required id="acc1">
+        <input type="text" placeholder="Mobile Number" id="acc2" required>
+        <input type="email" placeholder="Email" id="acc3" required>
+        <input type="password" placeholder="Set a Password" id="acc4" required>
+        <button class="enter" onclick="createAccount()">Create Account</button>
+    </div>
+
+
+</body>
+</html>
